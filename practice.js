@@ -52,9 +52,9 @@ console.log(devMountainGoal)
 
 //Code here
 function greeting(name) {
-  return `Hello, + ${name}`;
+  return 'Hello, '+name;
 }
-greeting(everybody)
+greeting()
 
 //////////////////PROBLEM 7////////////////////
 
@@ -62,10 +62,10 @@ greeting(everybody)
 //Give it the same functionality as the function greeting in Problem 6.
 
 //Code Here
-let newGreeting = function greeting(name) {
-  return `Hello, + ${name}`;
+let newGreeting = greeting
+  
 }
-greeting(myslef)
+newGreeting()
 
 //////////////////PROBLEM 8////////////////////
 
@@ -98,7 +98,7 @@ console.log(dog)
 //variable called devMountainClassPet.
 
 //Code Here
-let devMountainClassPet = dog.name();
+let devMountainClassPet = dog;
 
 console.log(devMountainClassPet)
 
@@ -122,7 +122,7 @@ function nameCheck(name) {
   }
 }
 
-nameCheck(Bryan)
+nameCheck()
 
 //////////////////PROBLEM 11////////////////////
 
@@ -167,7 +167,7 @@ function faveColorFinder(color) {
   }
 }
 
-faveColorFinder(purple)
+faveColorFinder()
 
 //////////////////PROBLEM 13////////////////////
 
@@ -225,14 +225,14 @@ console.log(age)
 // reassign the value of age to be one greater than it was, because, we all get older
 
 // Code Here
-let age = age.me() + 1;
+age.me = 44;
 
 console.log(age)
 
 // Good news! We can live forever. Set your age to 999
 
 // Code Here
-age.me(999)
+age.me = 999;
 
 console.log(age)
 
