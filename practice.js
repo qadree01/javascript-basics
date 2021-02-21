@@ -62,8 +62,8 @@ greeting()
 //Give it the same functionality as the function greeting in Problem 6.
 
 //Code Here
-function newGreeting() {
-  return greeting();
+function newGreeting(name) {
+  return 'Hello, '+name;
 }
 
 newGreeting()
@@ -87,11 +87,11 @@ console.log(groceries)
 
 //Code Here
 let dog = {
-  name: "Mutt",
-  color: "black",
-  age: 3,
-  goodboy: true,
-}
+  name : "Mutt",
+  color : "black",
+  age : 3,
+  goodboy :  true
+};
 
 console.log(dog)
 
@@ -99,9 +99,9 @@ console.log(dog)
 //variable called devMountainClassPet.
 
 //Code Here
-let devMountainClassPet = dog;
+let devMountainClassPet = dog.name();
 
-console.log(devMountainClassPet)
+devMountainClassPet()
 
 //////////////////PROBLEM 10////////////////////
 
@@ -121,6 +121,7 @@ function nameCheck(name) {
   } else {
     return 'Cool name, '+name;
   }
+}
 
 nameCheck()
 
@@ -132,10 +133,10 @@ nameCheck()
 
 //Code Here
 function add(num1, num2) {
-  return num1 +  num2;
+  return num1 + num2;
 }
 
-add(5, 6)
+add()
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
@@ -143,7 +144,7 @@ add(5, 6)
 //Code Here
 let mathSum = add(3, 4);
 
-console.log(mathSum)
+mathSum()
 
 //////////////////PROBLEM 12////////////////////
 
@@ -191,7 +192,7 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "rubberDuck", "realDuck"];
+let globalScope = ["duck", "rubberDuck", "realDuck", "sailorDuck"];
 
 console.log(globalScope)
 
