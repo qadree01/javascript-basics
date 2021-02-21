@@ -62,9 +62,10 @@ greeting()
 //Give it the same functionality as the function greeting in Problem 6.
 
 //Code Here
-let newGreeting = greeting
-  
+function newGreeting() {
+  return greeting();
 }
+
 newGreeting()
 
 //////////////////PROBLEM 8////////////////////
@@ -88,7 +89,7 @@ console.log(groceries)
 let dog = {
   name: "Mutt",
   color: "black",
-  age: "3",
+  age: 3,
   goodboy: true,
 }
 
@@ -114,13 +115,12 @@ console.log(devMountainClassPet)
 // Code here
 function nameCheck(name) {
   if (name = 'Steven') {
-    return 'What is up Steven?'
+    return 'What is up Steven?';
   } else if (name = 'Bryan') {
-    return 'Hey Bryan!'
+    return 'Hey Bryan!';
   } else {
-    return (`Cool name, ${name}`)
+    return 'Cool name, '+name;
   }
-}
 
 nameCheck()
 
